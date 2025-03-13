@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 from jarvis.core.atoms import Atoms
 
-from jarvis.core.graphs import nearest_neighbor_edges, build_undirected_edgedata
+from .jarvis.core.graphs.graphs import nearest_neighbor_edges, build_undirected_edgedata
 from jarvis.db.figshare import data as jdata
 from jarvis.core.specie import chem_data, get_node_attributes
 
