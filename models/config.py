@@ -2,13 +2,10 @@
 
 import subprocess
 from typing import Optional, Union
-import os
 from pydantic import root_validator
 
-# vfrom pydantic import Field, root_validator, validator
 from pydantic.typing import Literal
 
-# from typing import List
 from models.base import BaseSettings
 from models.potnet import PotNetConfig
 

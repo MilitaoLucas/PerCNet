@@ -1,12 +1,5 @@
 
-import math
-from typing import Optional
-from .features import angle_emb, torsion_emb
-import numpy as np
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-
 from pydantic.typing import Literal
 from torch_geometric.nn import Linear, MessagePassing, global_mean_pool
 from torch_geometric.nn.models.schnet import ShiftedSoftplus
@@ -18,13 +11,11 @@ from models.utils import RBFExpansion
 
 device = torch.device("cuda:2")
 
-from torch_cluster import radius_graph
 from torch_geometric.nn import GraphConv, GraphNorm
 from torch_geometric.nn import inits
 
 from .features import angle_emb, torsion_emb
 
-from torch_scatter import scatter, scatter_min
 
 from torch.nn import Embedding
 

@@ -2,15 +2,11 @@
 # https://github.com/TUM-DAML/gemnet_pytorch/blob/master/gemnet/model/layers/basis_utils.py
 # https://github.com/TUM-DAML/gemnet_pytorch/blob/master/gemnet/model/layers/basis_layers.py
 
-import math
 import torch
 import sympy as sym
 import numpy as np
 from scipy.optimize import brentq
 from scipy import special as sp
-
-from scipy.special import binom
-from torch_geometric.nn.models.schnet import GaussianSmearing
 
 
 def Jn(r, n):

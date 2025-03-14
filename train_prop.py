@@ -1,14 +1,11 @@
 import csv
-from pathlib import Path
 
 import matplotlib.pyplot as plt
 
 import numpy as np
 import time
-from typing import Any, Dict, Union, Tuple
-import pickle as pk
+from typing import Any, Dict, Union
 import os
-import torch.distributed as dist
 
 import torch
 from jarvis.core.atoms import Atoms
@@ -37,7 +34,6 @@ from ignite.contrib.handlers.tensorboard_logger import (
 from ignite.contrib.handlers.tqdm_logger import ProgressBar
 from ignite.engine import (
     Events,
-    Engine,
     create_supervised_evaluator,
     create_supervised_trainer,
 )

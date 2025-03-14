@@ -1,10 +1,7 @@
-import itertools
 import random
-import sys
 import time
 from pathlib import Path
 from typing import Optional
-from torch_cluster import radius_graph
 import os
 import torch
 import numpy as np
@@ -15,8 +12,7 @@ from .jarvis.core.graphs.graphs import nearest_neighbor_edges, build_undirected_
 from jarvis.db.figshare import data as jdata
 from jarvis.core.specie import chem_data, get_node_attributes
 
-# from torch.utils.data import DataLoader
-from torch_geometric.data import Data, InMemoryDataset, Batch
+from torch_geometric.data import Data, InMemoryDataset
 from torch_geometric.loader import DataLoader
 
 from tqdm import tqdm

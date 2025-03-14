@@ -1,6 +1,5 @@
-from typing import Optional, Tuple, Union, Dict
+from typing import Optional, Union
 import math
-import torch
 import torch.nn.functional as F
 from torch import Tensor
 from torch_geometric.nn.models.schnet import ShiftedSoftplus

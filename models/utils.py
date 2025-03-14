@@ -1,5 +1,5 @@
-from torch import nn, Tensor
-from typing import Tuple, Optional
+from torch import nn
+from typing import Optional
 import numpy as np
 import torch
 
