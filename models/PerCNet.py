@@ -9,7 +9,7 @@ from models.transformer import TransformerConv
 
 from models.utils import RBFExpansion
 
-device = torch.device("cuda:2")
+device = torch.device("cuda:0")
 
 from torch_geometric.nn import GraphConv, GraphNorm
 from torch_geometric.nn import inits
