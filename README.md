@@ -7,4 +7,5 @@ conda env create -f environment.yml
 ```
 
 ## License
-Everything in this project is under GPL-V3 except for everything under the Jarvis directory
+This project is under GPL-V3 except for anything under the Jarvis directory Jarvis has an especial license. Please refer
+to [jarvis/LICENSE.rst](jarvis/LICENSE.rst) for more details.
