@@ -16,7 +16,7 @@ from models.transformer import TransformerConv
 
 from models.utils import RBFExpansion
 
-device = torch.device("cpu")
+device = torch.device("cuda:2")
 
 from torch_cluster import radius_graph
 from torch_geometric.nn import GraphConv, GraphNorm
